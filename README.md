@@ -89,7 +89,7 @@ Visit your app on: `http://localhost:3000`.
 ## Token Features
 
 - **Total Supply**: 21 trillion XDCLP tokens
-- **Transfer Fee**: 0.008 XDC per transfer
+- **Transfer Fee**: 0.08 XDCLP tokens per transfer
 - **Staking**: Deposit/withdraw tokens for staking
 - **ERC20Permit**: Gasless approvals support
 
