@@ -122,7 +122,7 @@ describe("XDCLaunchpadToken", function () {
   describe("ERC20Permit", function () {
     it("Should support permit", async function () {
       const value = ethers.parseEther("100");
-      const deadline = Math.floor(Date.now() / 1000) + 3600;
+      const deadline = (await ethers.provider.getBlock("latest"))!.timestamp + 3600;
 
       const { v, r, s } = await signPermit(owner, await token.getAddress(), addr1.address, value, deadline);
 
